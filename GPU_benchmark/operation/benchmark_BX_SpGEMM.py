@@ -47,6 +47,7 @@ def main():
     
     for _ in range(5):
     # GraphBlas accum
+        BX(mask=~BX.S) << 0
         BX << 0
         start_time = time.time()
         BX(accum=gb.binary.plus, nthreads=8) << gB.mxm(gX)

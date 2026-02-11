@@ -38,7 +38,6 @@ def main():
 
     # GraphBlas normal
     for _ in range(5):
-        BX << 0
         start_time = time.time()
         BX(nthreads=8) << gB.mxm(gX)
         end_time = time.time()
@@ -48,6 +47,8 @@ def main():
     
     for _ in range(5):
     # GraphBlas accum
+        BX(mask=~BX.S) << 0
+        BX << 0
         start_time = time.time()
         BX(accum=gb.binary.plus, nthreads=8) << gB.mxm(gX)
         end_time = time.time()

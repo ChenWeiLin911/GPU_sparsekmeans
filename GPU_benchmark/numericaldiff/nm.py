@@ -155,7 +155,7 @@ def main():
     k=5,
     bins=120,
     log_hist=True,
-    ignore_below=1e-17,
+    ignore_below=1e-20,
     save_path=f"./result/{dataset}/rel_error_hist_XCT_vs_CuPy_accum_{K}.png"
     )
 
