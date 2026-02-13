@@ -166,3 +166,13 @@ This compares GraphBLAS and CuPy results and saves relative-error histograms.
 
 Batch script:
 - `nm_run.sh`
+
+
+## TODO
+
+- [ ] Implement memory consumption check for BX (currently only supports XCT).
+- [ ] Add numerical difference benchmark for BX (currently only supports XCT).
+- [ ] Add operation results to /GPU_benchmark/operation/README.md.
+- [ ] Add memory usage results to /GPU_benchmark/memory/README.md.
+- [ ] Add numerical difference results to /GPU_benchmark/numericalldiff/README.md.
+
