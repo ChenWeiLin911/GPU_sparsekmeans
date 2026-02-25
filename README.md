@@ -172,7 +172,7 @@ Batch script:
 
 - [x] Implement memory consumption check for BX (currently only supports XCT).
 - [x] Add numerical difference benchmark for BX (currently only supports XCT).
-- [ ] Add operation results to /GPU_benchmark/operation/README.md.
+- [x] Add operation results to /GPU_benchmark/operation/README.md.
 - [x] Add memory usage results to /GPU_benchmark/memory/README.md.
 - [x] Add numerical difference results to /GPU_benchmark/numericalldiff/README.md.
 
