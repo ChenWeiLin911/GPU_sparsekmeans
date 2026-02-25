@@ -128,7 +128,6 @@ def main():
     gC = gb.Matrix.ss.import_csc(**gC)
     XCT(nthreads=8) << gX.mxm(gC.T)
     XCT_np = XCT.to_dense(fill_value=0)
-    print("finish XCT")
     topk_relative_error(
     XCT_np,
     D_np,
